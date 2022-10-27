@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0B2434;
+}
+
+main {
+    width: 320px;
+    height: 320px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dice-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.die, .roll-button, h1 {
+    font-family: 'Karla', sans-serif;
+}
+
+.die {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);   
+    color: #2B283A;  
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dot-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.two div:last-of-type {
+    grid-area: 3 / 2 / 3 / 2;
+}
+
+.dot-container.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.three div:nth-of-type(2) {
+    grid-area: 2 / 2 / 2 / 2;
+}
+.three div:last-of-type {
+    grid-area: 3 / 3 / 3 / 3;
+}
+
+.four div:nth-of-type(3) {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.four div:last-of-type {
+    grid-area: 3 / 2 / 4 / 3 ;
+}
+
+.dot-container.five {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.five div:nth-of-type(2) {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.five div:nth-of-type(3) {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.five div:nth-of-type(4) {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.five div:last-of-type {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background-color: #2B283A;
+    border-radius: 50%;
+}
+
+.roll-button {
+    width: 92px;
+    height: 36px;
+    background-color: #5035FF;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.roll-button:active {
+    transform: scale(0.95);
+}
+
+header {
+    width: 233px;
+    text-align: center;
+}
+
+h1 {
+    color: #2B283A;
+    line-height: 30px;
+    margin: 0;
+}
+
+p {
+    color: #4A4E74;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.03em;
+    margin: 0;
+    padding-top: 3px;
+}
+
+.green {
+    background-color: #59E391;
+}
