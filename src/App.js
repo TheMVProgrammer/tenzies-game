@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Die from "./components/Die";
+import Tracker from "./components/Tracker";
 import { v4 as uuid } from 'uuid'; //"react-uuid" library to easily generate Universal Unique Identifiers
 import Confetti from 'react-confetti'; //React component to draw confetti
 
@@ -78,6 +79,7 @@ function App() {
         className="roll-button">
         {tenzies ? "New Game" : "Roll"}
       </button>
+      <Tracker/>
     </main>
   );
 }

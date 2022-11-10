@@ -18,7 +18,7 @@ body {
 
 main {
     width: 320px;
-    height: 320px;
+    height: 400px;
     background-color: #F5F5F5;
     border-radius: 10px;
     display: flex;
@@ -156,4 +156,15 @@ p {
 
 .green {
     background-color: #59E391;
+}
+
+.tracker-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.tracker-container p {
+    font-size: 16px;
 }
