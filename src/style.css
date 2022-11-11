@@ -18,7 +18,7 @@ body {
 
 main {
     width: 320px;
-    height: 400px;
+    height: 350px;
     background-color: #F5F5F5;
     border-radius: 10px;
     display: flex;
@@ -167,4 +167,22 @@ p {
 
 .tracker-container p {
     font-size: 16px;
+}
+
+.best-time p:last-of-type {
+    font-weight: 800;
+    color: #4A4E74;
+}
+
+footer {
+    font-family: 'Karla', sans-serif;
+    color: #F5F5F5;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    word-spacing: 2px;
+}
+
+footer span {
+    color: #f00;
 }
